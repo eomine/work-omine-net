@@ -1,5 +1,4 @@
 import Layout from '../components/layout';
-import About from '../components/home/about'
 import Contact from '../components/home/contact'
 import Hero from '../components/home/hero'
 import RecentWorks from '../components/home/recent-works'
@@ -9,7 +8,6 @@ export default function Home({ recentWorks }) {
   return (
     <Layout>
       <Hero></Hero>
-      <About></About>
       <RecentWorks data={recentWorks}></RecentWorks>
       <Contact></Contact>
     </Layout>
