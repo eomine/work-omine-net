@@ -1,0 +1,11 @@
+.content {
+  @apply mb-16 text-3xl text-gray-100;
+}
+
+.content h2 {
+  @apply font-bold mb-8 mt-16 text-4xl text-gray-400;
+}
+
+.content p {
+  @apply mb-8;
+}

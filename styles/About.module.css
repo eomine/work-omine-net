@@ -1,0 +1,7 @@
+.content {
+  @apply mb-16 text-3xl text-gray-100;
+}
+
+.content p {
+  @apply mb-8;
+}
