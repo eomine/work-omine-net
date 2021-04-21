@@ -1,20 +1,15 @@
-import Link from 'next/link';
+import RecentWorksItem from "./recent-works-item";
 
 export default function RecentWorks({ data }) {
   return (
-    <section>
-      <h2>
-        Recent works
-      </h2>
-      <div>
-        { data.map(work => (
-          <div key={work.slug}>
-            <h2>{ work.title }</h2>
-            <Link href="/works/[slug]" as={`/works/${work.slug}`}>
-              View more
-            </Link>
-          </div>
-        ))}
+    <section className="p-40 dark:bg-gray-900">
+      <div className="max-w-4xl">
+        <h2 className="mb-8 text-5xl text-gray-400">
+          Recent works
+        </h2>
+        <div>
+          { data.map(work => <RecentWorksItem key={work.slug} data={work}/> )}
+        </div>
       </div>
     </section>
   );
