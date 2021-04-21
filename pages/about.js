@@ -7,14 +7,14 @@ import styles from '../styles/About.module.css';
 export default function About({ title, content }) {
   return (
     <Layout title={title}>
-      <section className="p-40 dark:bg-gray-900">
+      <section className="px-6 py-12 md:p-24 xl:p-40 dark:bg-gray-900">
         <div className="max-w-4xl">
-          <h1 className="mb-8 text-5xl text-gray-400">
+          <h1 className="mb-8 text-xl md:text-3xl xl:text-5xl text-gray-400">
             { title }
           </h1>
           <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }}></div>
           <Link href="/">
-            <a className="text-gray-300 text-xl tracking-widest uppercase">Return to home</a>
+            <a className="text-gray-300 text-base md:text-lg xl:text-xl tracking-widest uppercase">Return to home</a>
           </Link>
         </div>
       </section>

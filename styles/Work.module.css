@@ -1,11 +1,11 @@
 .content {
-  @apply mb-16 text-3xl text-gray-100;
+  @apply mb-16 text-lg md:text-2xl xl:text-3xl text-gray-100;
 }
 
 .content h2 {
-  @apply font-bold mb-8 mt-16 text-4xl text-gray-400;
+  @apply font-bold mb-8 mt-16 text-lg md:text-2xl xl:text-4xl text-gray-400;
 }
 
 .content p {
-  @apply mb-8;
+  @apply mb-4 md:mb-6 xl:mb-8;
 }
