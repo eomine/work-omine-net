@@ -21,6 +21,9 @@ export default function Meta({ title }) {
       <meta property="og:title" content="Eduardo Ōmine | Front-end Developer"/>
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="http://work.omine.net/"/>
+
+      <link rel="preconnect" href="https://fonts.gstatic.com"/>
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
     </Head>
   )
 }
