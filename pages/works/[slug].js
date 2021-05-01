@@ -4,7 +4,7 @@ import { getPostBySlug, getPostsSlugs } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
 import styles from '../../styles/Work.module.css';
 
-export default function Work({ title, content }) {
+export default function Work({ images, tech, title, content }) {
   return (
     <Layout title={title}>
       <section className="px-6 py-12 md:p-24 xl:p-40 dark:bg-gray-900">
@@ -12,7 +12,13 @@ export default function Work({ title, content }) {
           <h1 className="mb-8 text-xl md:text-3xl xl:text-5xl text-gray-400">
             { title }
           </h1>
+          <div className="mb-8">
+            { tech.map(item => <span className="mr-4">{ item }</span>) }
+          </div>
           <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }}></div>
+          <div className={styles.gallery}>
+            { images.map(image => <img src={`/${image}`} />) }
+          </div>
           <Link href="/">
             <a className="text-gray-300 text-base md:text-lg xl:text-xl tracking-widest uppercase">Return to home</a>
           </Link>
