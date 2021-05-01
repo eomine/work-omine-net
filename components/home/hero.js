@@ -7,7 +7,7 @@ export default function Hero({ data }) {
         Eduardo Ōmine
       </h1>
       <p className="leading-tight mb-4 md:mb-5 xl:mb-6 text-2xl md:text-4xl xl:text-6xl text-gray-100">
-        Senior front-end developer with <em>15 years of professional experience.</em>
+        Senior front-end developer working with React, Redux, Angular, Typescript
       </p>
       <Link href="/about">
         <a className="text-base md:text-lg xl:text-xl text-gray-300 tracking-widest uppercase">Read full profile</a>
