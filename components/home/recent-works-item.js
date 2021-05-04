@@ -1,15 +1,22 @@
 import Link from 'next/link';
+import common from '../../styles/common.module.css';
 import styles from '../../styles/recent-works-item.module.css';
 
 export default function RecentWorksItem({ data }) {
   return (
-    <Link href="/works/[slug]" as={`/works/${data.slug}`}>
-      <a className={styles.wrapper}>
-        <span className={styles.title}>
-          { data.title }
+    <div className={styles.wrapper}>
+      <div className={common.h1}>
+        <Link href="/works/[slug]" as={`/works/${data.slug}`}>
+          <a>
+            { data.title }
+          </a>
+        </Link>
+      </div>
+      { data.tech.map(item => (
+        <span key={item} className={common.tag}>
+          { item }
         </span>
-        { data.tech.map(item => <span className="mr-4">{ item }</span>) }
-      </a>
-    </Link>
+      )) }
+    </div>
   );
 }

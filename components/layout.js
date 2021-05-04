@@ -12,15 +12,21 @@ export default function Layout({ children, title }) {
       <div className={styles.wrapper}>
         <aside className={styles.aside}>
           <Hero></Hero>
-          <Contact></Contact>
+          <div className="hidden md:block">
+            <Contact></Contact>
+            <Footer></Footer>
+          </div>
         </aside>
 
         <main>
           { children }
         </main>
-      </div>
 
-      <Footer></Footer>
+        <aside className="md:hidden">
+          <Contact></Contact>
+          <Footer></Footer>
+        </aside>
+      </div>
     </>
   );
 }

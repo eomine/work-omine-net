@@ -1,17 +1,18 @@
 import Link from 'next/link';
-import styles from '../styles/hero.module.css';
+import common from '../styles/common.module.css';
 
 export default function Hero() {
   return (
-    <section className={styles.wrapper}>
-      <h1 className={styles.h1}>
+    <section className={common.box}>
+      <h1 className={common.h3}>
         Eduardo Ōmine
       </h1>
-      <p className={styles.text}>
-        Senior front-end developer working with React, Redux, Angular, Typescript
+      <p className={common.text}>
+        Senior front-end developer<br/>
+        React, Redux, Typescript
       </p>
       <Link href="/about">
-        <a className={styles.link}>Read full profile</a>
+        <a className={common.link}>About &rarr;</a>
       </Link>
     </section>
   );

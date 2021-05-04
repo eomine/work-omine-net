@@ -1,7 +1,0 @@
-.wrapper {
-  @apply px-6 py-12 dark:bg-gray-900;
-}
-
-.h2 {
-  @apply mb-8 text-xl md:text-3xl xl:text-5xl text-gray-400;
-}

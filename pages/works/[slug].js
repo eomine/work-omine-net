@@ -3,19 +3,29 @@ import Link from 'next/link';
 import Layout from '../../components/layout';
 import { getPostBySlug, getPostsSlugs } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
+import common from '../../styles/common.module.css';
 import styles from '../../styles/work.module.css';
 
 export default function Work({ images, tech, title, content }) {
   return (
     <Layout title={title}>
-      <section className={styles.wrapper}>
-        <h1 className={styles.h1}>
+      <section className={common.main}>
+        <Link href="/">
+          <a className={common.link}>&larr; Home</a>
+        </Link>
+        <div className="h-8"></div>
+        <h1 className={common.h1}>
           { title }
         </h1>
         <div className="mb-8">
-          { tech.map(item => <span key={item} className="mr-4">{ item }</span>) }
+          { tech.map(item => (
+            <span key={item} className={common.tag}>
+              { item }
+            </span>
+          )) }
         </div>
-        <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div className={common.content} dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div className="h-8"></div>
         <div className={styles.gallery}>
           {
             images.map(image => (
@@ -24,7 +34,7 @@ export default function Work({ images, tech, title, content }) {
           }
         </div>
         <Link href="/">
-          <a className={styles.link}>Return to home</a>
+          <a className={common.link}>&larr; Home</a>
         </Link>
       </section>
     </Layout>

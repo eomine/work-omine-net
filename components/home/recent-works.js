@@ -1,14 +1,17 @@
 import RecentWorksItem from "./recent-works-item";
-import styles from '../../styles/recent-works.module.css';
+import common from '../../styles/common.module.css';
 
 export default function RecentWorks({ data }) {
   return (
-    <section className={styles.wrapper}>
-      <h2 className={styles.h2}>
+    <section className={common.main}>
+      <h2 className={common.h3}>
         Recent works
       </h2>
+      <div className="h-4"></div>
       <div>
-        { data.map(work => <RecentWorksItem key={work.slug} data={work}/> )}
+        { data.map(work => (
+          <RecentWorksItem key={work.slug} data={work} />
+        ))}
       </div>
     </section>
   );

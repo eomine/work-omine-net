@@ -1,8 +1,18 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+@screen md {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .aside {
+    align-self: start;
+    position: sticky;
+    top: 0;
+  }
 }
 
-.aside {
-
+@screen xl {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+  }
 }
