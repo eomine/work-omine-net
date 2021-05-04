@@ -1,28 +1,31 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../../components/layout';
 import { getPostBySlug, getPostsSlugs } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
-import styles from '../../styles/Work.module.css';
+import styles from '../../styles/work.module.css';
 
 export default function Work({ images, tech, title, content }) {
   return (
     <Layout title={title}>
-      <section className="px-6 py-12 md:p-24 xl:p-40 dark:bg-gray-900">
-        <div className="max-w-4xl">
-          <h1 className="mb-8 text-xl md:text-3xl xl:text-5xl text-gray-400">
-            { title }
-          </h1>
-          <div className="mb-8">
-            { tech.map(item => <span className="mr-4">{ item }</span>) }
-          </div>
-          <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }}></div>
-          <div className={styles.gallery}>
-            { images.map(image => <img src={`/${image}`} />) }
-          </div>
-          <Link href="/">
-            <a className="text-gray-300 text-base md:text-lg xl:text-xl tracking-widest uppercase">Return to home</a>
-          </Link>
+      <section className={styles.wrapper}>
+        <h1 className={styles.h1}>
+          { title }
+        </h1>
+        <div className="mb-8">
+          { tech.map(item => <span key={item} className="mr-4">{ item }</span>) }
         </div>
+        <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div className={styles.gallery}>
+          {
+            images.map(image => (
+              <img key={image} alt="" src={`/${image}`}/>
+            ))
+          }
+        </div>
+        <Link href="/">
+          <a className={styles.link}>Return to home</a>
+        </Link>
       </section>
     </Layout>
   );

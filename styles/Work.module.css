@@ -1,3 +1,11 @@
+.wrapper {
+  @apply px-6 py-12 dark:bg-gray-900;
+}
+
+.h1 {
+  @apply font-bold mb-2 md:mb-3 xl:mb-4 text-xl md:text-2xl xl:text-4xl text-gray-50;
+}
+
 .content {
   @apply mb-16 text-lg md:text-2xl xl:text-3xl text-gray-100;
 }
@@ -18,4 +26,8 @@
 
 .gallery > img {
   @apply mb-4 md:mb-6 xl:mb-8;
+}
+
+.link {
+  @apply text-base md:text-lg xl:text-xl text-gray-300 tracking-widest uppercase;
 }
