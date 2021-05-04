@@ -2,8 +2,6 @@
 title: 'Systemweaver'
 images:
   - 'systemweaver.png'
-  - 'systemweaver-about.png'
-  - 'systemweaver-contact.png'
   - 'systemweaver-how-it-works.png'
 order: 3
 tech:

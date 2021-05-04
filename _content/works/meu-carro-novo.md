@@ -3,7 +3,6 @@ title: 'Meu Carro Novo'
 images:
   - 'meu-carro-novo.png'
   - 'meu-carro-novo-detail.png'
-  - 'meu-carro-novo-search.png'
 order: 1
 tech:
   - Angular

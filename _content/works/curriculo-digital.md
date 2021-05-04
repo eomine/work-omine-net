@@ -3,9 +3,6 @@ title: 'Currículo digital'
 images:
   - 'curriculo-digital.png'
   - 'curriculo-digital-search.png'
-  - 'curriculo-digital-sequences.png'
-  - 'curriculo-digital-sequence.png'
-  - 'curriculo-digital-ods.png'
 order: 2
 tech:
   - React

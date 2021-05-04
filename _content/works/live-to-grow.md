@@ -3,7 +3,6 @@ title: 'Live to Grow'
 images:
   - 'live-to-grow.png'
   - 'live-to-grow-stockholm.png'
-  - 'live-to-grow-info.png'
 order: 4
 tech:
   - React
