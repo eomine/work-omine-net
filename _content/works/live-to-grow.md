@@ -1,8 +1,8 @@
 ---
 title: 'Live to Grow'
 images:
-  - 'live-to-grow.png'
-  - 'live-to-grow-stockholm.png'
+  - 'live-to-grow.jpg'
+  - 'live-to-grow-stockholm.jpg'
 order: 4
 tech:
   - React

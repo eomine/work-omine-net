@@ -1,8 +1,8 @@
 ---
 title: 'Systemweaver'
 images:
-  - 'systemweaver.png'
-  - 'systemweaver-how-it-works.png'
+  - 'systemweaver.jpg'
+  - 'systemweaver-how-it-works.jpg'
 order: 3
 tech:
   - React

@@ -1,8 +1,8 @@
 ---
 title: 'Currículo digital'
 images:
-  - 'curriculo-digital.png'
-  - 'curriculo-digital-search.png'
+  - 'curriculo-digital.jpg'
+  - 'curriculo-digital-search.jpg'
 order: 2
 tech:
   - React
