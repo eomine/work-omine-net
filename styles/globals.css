@@ -2,11 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
+  @apply text-base md:text-lg;
+
   font-family: 'Fira Sans', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+a {
+  @apply underline;
 }

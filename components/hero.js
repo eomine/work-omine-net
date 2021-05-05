@@ -7,7 +7,7 @@ export default function Hero() {
       <h1 className={common.h3}>
         Eduardo Ōmine
       </h1>
-      <p className={common.text}>
+      <p>
         Senior front-end developer<br/>
         React, Redux, Typescript
       </p>
@@ -17,7 +17,7 @@ export default function Hero() {
         </Link>
       </p>
       <p>
-        <Link href="/cv.pdf">
+        <Link href="/cv-eduardo-omine.pdf">
           <a className={common.link}>CV &rarr;</a>
         </Link>
       </p>

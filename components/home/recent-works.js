@@ -7,7 +7,7 @@ export default function RecentWorks({ data }) {
       <h2 className={common.h3}>
         Recent works
       </h2>
-      <div className="h-4"></div>
+      <div className="h-8"></div>
       <div>
         { data.map(work => (
           <RecentWorksItem key={work.slug} data={work} />
