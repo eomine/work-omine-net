@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer className={common.box}>
       <span className={styles.footer}>
-        Built with &thinsp;
+        Built with {' '}
         <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>
-        &thinsp; and &thinsp;
+        {' '} and {' '}
         <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</a>
       </span>
     </footer>
