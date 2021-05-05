@@ -11,9 +11,16 @@ export default function Hero() {
         Senior front-end developer<br/>
         React, Redux, Typescript
       </p>
-      <Link href="/about">
-        <a className={common.link}>About &rarr;</a>
-      </Link>
+      <p>
+        <Link href="/about">
+          <a className={common.link}>About &rarr;</a>
+        </Link>
+      </p>
+      <p>
+        <Link href="/cv.pdf">
+          <a className={common.link}>CV &rarr;</a>
+        </Link>
+      </p>
     </section>
   );
 }
