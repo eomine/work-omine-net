@@ -3,7 +3,7 @@ title: 'Live to Grow'
 images:
   - 'live-to-grow.jpg'
   - 'live-to-grow-stockholm.jpg'
-order: 4
+order: 5
 tech:
   - React
   - Next.js

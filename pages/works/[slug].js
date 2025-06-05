@@ -23,7 +23,7 @@ export default function Work({ images, tech, title, content }) {
             </span>
           )) }
         </div>
-        <div className={common.content} dangerouslySetInnerHTML={{ __html: content }}></div>
+        <div className={[common.content, styles.content].join(' ')} dangerouslySetInnerHTML={{ __html: content }}></div>
         <div className="h-8"></div>
         <div className={styles.gallery}>
           {

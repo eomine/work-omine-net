@@ -3,7 +3,7 @@ title: 'Currículo Digital'
 images:
   - 'curriculo-digital.jpg'
   - 'curriculo-digital-search.jpg'
-order: 2
+order: 3
 tech:
   - React
   - Redux

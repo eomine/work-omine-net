@@ -3,7 +3,7 @@ title: 'Systemweaver'
 images:
   - 'systemweaver.jpg'
   - 'systemweaver-how-it-works.jpg'
-order: 3
+order: 4
 tech:
   - React
   - Next.js
