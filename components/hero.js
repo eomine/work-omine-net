@@ -17,7 +17,7 @@ export default function Hero() {
         </Link>
       </p>
       <p>
-        <Link href="/cv-eduardo-omine.pdf">
+        <Link href="/cv-eduardo-omine-2025.pdf">
           <a className={common.link}>CV &rarr;</a>
         </Link>
       </p>
