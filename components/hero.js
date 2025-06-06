@@ -12,13 +12,13 @@ export default function Hero() {
         React, Redux, Typescript
       </p>
       <p>
-        <Link href="/about">
-          <a className={common.link}>About &rarr;</a>
+        <Link href="/about" className={common.link}>
+          About &rarr;
         </Link>
       </p>
       <p>
-        <Link href="/cv-eduardo-omine-2025.pdf">
-          <a className={common.link}>CV &rarr;</a>
+        <Link href="/cv-eduardo-omine-2025.pdf" className={common.link}>
+          CV &rarr;
         </Link>
       </p>
     </section>

@@ -9,8 +9,8 @@ export default function Work({ images, tech, title, content }) {
   return (
     <Layout title={title}>
       <section className={common.main}>
-        <Link href="/">
-          <a className={common.link}>&larr; Home</a>
+        <Link href="/" className={common.link}>
+          &larr; Home
         </Link>
         <div className="h-8"></div>
         <h1 className={common.h1}>
@@ -32,8 +32,8 @@ export default function Work({ images, tech, title, content }) {
             ))
           }
         </div>
-        <Link href="/">
-          <a className={common.link}>&larr; Home</a>
+        <Link href="/" className={common.link}>
+          &larr; Home
         </Link>
       </section>
     </Layout>

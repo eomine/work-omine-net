@@ -8,16 +8,16 @@ export default function About({ title, content }) {
   return (
     <Layout title={title}>
       <section className={common.main}>
-        <Link href="/">
-          <a className={common.link}>&larr; Home</a>
+        <Link href="/" className={common.link}>
+          &larr; Home
         </Link>
         <div className="h-8"></div>
         <h1 className={common.h1}>
           { title }
         </h1>
         <div className={common.content} dangerouslySetInnerHTML={{ __html: content }}></div>
-        <Link href="/">
-          <a className={common.link}>&larr; Home</a>
+        <Link href="/" className={common.link}>
+          &larr; Home
         </Link>
       </section>
     </Layout>

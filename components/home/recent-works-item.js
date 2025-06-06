@@ -7,9 +7,7 @@ export default function RecentWorksItem({ data }) {
     <div className={styles.wrapper}>
       <div className={common.h1}>
         <Link href="/works/[slug]" as={`/works/${data.slug}`}>
-          <a>
-            { data.title }
-          </a>
+          { data.title }
         </Link>
       </div>
       { data.tech.map(item => (
