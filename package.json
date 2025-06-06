@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "rm -rf .next && rm -rf out && next build && next export"
+    "export": "rm -rf .next && rm -rf out && next build"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.8",
