@@ -1,3 +1,5 @@
+@reference "./globals.css";
+
 .h1 {
   @apply font-bold mb-0.5 md:mb-1 xl:mb-2 text-2xl md:text-3xl text-gray-100;
 }

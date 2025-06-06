@@ -1,3 +1,5 @@
+@reference "./globals.css";
+
 .gallery,
 .gallery > img {
   @apply mb-4 md:mb-6 xl:mb-8;
