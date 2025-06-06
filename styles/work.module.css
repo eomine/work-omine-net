@@ -5,11 +5,8 @@
   @apply mb-4 md:mb-6 xl:mb-8;
 }
 
-@screen xl {
-  .gallery {
-    columns: 2;
-    gap: 30px;
-  }
+.gallery {
+  @apply xl:columns-2 xl:gap-6;
 }
 
 .content > ul {

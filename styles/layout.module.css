@@ -1,20 +1,10 @@
 @reference "./globals.css";
 
-@screen md {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .aside {
-    align-self: start;
-    position: sticky;
-    top: 0;
-  }
+.wrapper {
+  @apply md:grid md:grid-cols-[1fr_2fr];
+  @apply xl:grid-cols-[1fr_3fr];
 }
 
-@screen xl {
-  .wrapper {
-    grid-template-columns: 1fr 3fr;
-  }
+.aside {
+  @apply md:self-start md:sticky md:top-0;
 }
