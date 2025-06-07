@@ -1,41 +1,44 @@
-import Link from 'next/link';
-import Layout from '../../components/layout';
+import Content from '../../components/Content';
+import { Gallery, GalleryImage } from '../../components/Gallery';
+import H1 from '../../components/H1';
+import Layout from '../../components/Layout';
+import Link from '../../components/Link';
+import Main from "../../components/Main";
+import Tag from '../../components/Tag';
 import { getPostBySlug, getPostsSlugs } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
-import common from '../../styles/common.module.css';
-import styles from '../../styles/work.module.css';
 
 export default function Work({ images, tech, title, content }) {
   return (
     <Layout title={title}>
-      <section className={common.main}>
-        <Link href="/" className={common.link}>
+      <Main>
+        <Link href="/">
           &larr; Home
         </Link>
         <div className="h-8"></div>
-        <h1 className={common.h1}>
+        <H1>
           { title }
-        </h1>
+        </H1>
         <div className="mb-8">
           { tech.map(item => (
-            <span key={item} className={common.tag}>
+            <Tag key={item}>
               { item }
-            </span>
+            </Tag>
           )) }
         </div>
-        <div className={[common.content, styles.content].join(' ')} dangerouslySetInnerHTML={{ __html: content }}></div>
+        <Content content={content}></Content>
         <div className="h-8"></div>
-        <div className={styles.gallery}>
+        <Gallery>
           {
             images.map(image => (
-              <img key={image} alt="" src={`/${image}`}/>
+              <GalleryImage key={image} alt="" src={`/${image}`}/>
             ))
           }
-        </div>
-        <Link href="/" className={common.link}>
+        </Gallery>
+        <Link href="/">
           &larr; Home
         </Link>
-      </section>
+      </Main>
     </Layout>
   );
 }

@@ -1,25 +1,27 @@
-import Link from 'next/link';
-import Layout from "../components/layout";
+import Content from '../components/Content';
+import H1 from '../components/H1';
+import Link from '../components/Link';
+import Layout from "../components/Layout";
+import Main from "../components/Main";
 import { getPostBySlug } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
-import common from '../styles/common.module.css';
 
 export default function About({ title, content }) {
   return (
     <Layout title={title}>
-      <section className={common.main}>
-        <Link href="/" className={common.link}>
+      <Main>
+        <Link href="/">
           &larr; Home
         </Link>
         <div className="h-8"></div>
-        <h1 className={common.h1}>
+        <H1>
           { title }
-        </h1>
-        <div className={common.content} dangerouslySetInnerHTML={{ __html: content }}></div>
-        <Link href="/" className={common.link}>
+        </H1>
+        <Content content={content}></Content>
+        <Link href="/">
           &larr; Home
         </Link>
-      </section>
+      </Main>
     </Layout>
   );
 }

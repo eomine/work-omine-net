@@ -1,5 +1,5 @@
-import Layout from '../components/layout';
-import RecentWorks from '../components/home/recent-works'
+import Layout from '../components/Layout';
+import RecentWorks from '../components/home/RecentWorks'
 import { getAllPosts } from '../lib/api';
 
 export default function Home({ recentWorks }) {

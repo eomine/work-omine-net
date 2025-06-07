@@ -1,16 +1,15 @@
-import Contact from './contact'
-import Footer from './footer';
-import Hero from './hero'
-import Meta from './meta';
-import styles from '../styles/layout.module.css';
+import Contact from './Contact'
+import Footer from './Footer';
+import Hero from './Hero'
+import Meta from './Meta';
 
 export default function Layout({ children, title }) {
   return (
     <>
       <Meta title={title} />
 
-      <div className={styles.wrapper}>
-        <aside className={styles.aside}>
+      <div className="md:grid md:grid-cols-[1fr_2fr] xl:grid-cols-[1fr_3fr]">
+        <aside className="md:self-start md:sticky md:top-0">
           <Hero></Hero>
           <div className="hidden md:block">
             <Contact></Contact>

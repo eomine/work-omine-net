@@ -1,18 +1,19 @@
-import RecentWorksItem from "./recent-works-item";
-import common from '../../styles/common.module.css';
+import H3 from "../H3";
+import Main from "../Main";
+import RecentWorksItem from "./RecentWorksItem";
 
 export default function RecentWorks({ data }) {
   return (
-    <section className={common.main}>
-      <h2 className={common.h3}>
+    <Main as="section">
+      <H3 as="h2">
         Recent works
-      </h2>
+      </H3>
       <div className="h-8"></div>
       <div>
         { data.map(work => (
           <RecentWorksItem key={work.slug} data={work} />
         ))}
       </div>
-    </section>
+    </Main>
   );
 }
