@@ -11,6 +11,8 @@
   --font-sans: "Fira Sans", "sans-serif";
 }
 
-a {
-  @apply underline;
+@layer base {
+  a {
+    @apply underline;
+  }
 }
