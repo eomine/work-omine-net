@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "export": "rm -rf .next && rm -rf out && next build",
-    "prettier": "prettier . --write"
+    "prettier": "prettier . --write",
+    "lint": "next lint"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.8",
@@ -22,6 +23,9 @@
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
+    "eslint": "^9.28.0",
+    "eslint-config-next": "15.3.3",
+    "eslint-plugin-next": "^0.0.0",
     "prettier": "^3.5.3"
   }
 }
