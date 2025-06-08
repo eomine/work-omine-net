@@ -25,7 +25,7 @@ export default function Work({ images, tech, title, content }) {
         <div className="h-8"></div>
         <Gallery>
           {images.map((image) => (
-            <GalleryImage key={image} alt="" src={`/${image}`} />
+            <GalleryImage key={image} alt={title} src={`/${image}`} />
           ))}
         </Gallery>
         <Link href="/">&larr; Home</Link>

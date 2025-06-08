@@ -4,6 +4,8 @@ export function Gallery(props) {
   );
 }
 
-export function GalleryImage(props) {
-  return <img className="mb-4 md:mb-6 xl:mb-8" {...props} />;
+export function GalleryImage({ alt = "", ...props }) {
+  /* can't use next/image component with output: 'export' */
+  /* eslint-disable-next-line @next/next/no-img-element */
+  return <img className="mb-4 md:mb-6 xl:mb-8" alt={alt} {...props} />;
 }
