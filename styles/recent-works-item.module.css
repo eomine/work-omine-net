@@ -1,5 +1,0 @@
-@reference "./globals.css";
-
-.wrapper {
-  @apply block mb-6 md:mb-8 xl:mb-10;
-}

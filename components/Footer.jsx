@@ -1,15 +1,14 @@
-import common from '../styles/common.module.css';
-import styles from '../styles/footer.module.css';
+import Box from './Box';
 
 export default function Footer() {
   return (
-    <footer className={common.box}>
-      <span className={styles.footer}>
+    <Box as="footer">
+      <span className="text-xs text-gray-500">
         Built with {' '}
         <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>
         {' '} and {' '}
         <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</a>
       </span>
-    </footer>
+    </Box>
   );
 }

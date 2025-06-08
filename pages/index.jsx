@@ -1,12 +1,13 @@
-import Layout from '../components/layout';
-import RecentWorks from '../components/home/recent-works'
+import Meta from '../components/Meta'
+import RecentWorks from '../components/home/RecentWorks'
 import { getAllPosts } from '../lib/api';
 
 export default function Home({ recentWorks }) {
   return (
-    <Layout>
+    <>
+      <Meta />
       <RecentWorks data={recentWorks}></RecentWorks>
-    </Layout>
+    </>
   )
 }
 

@@ -1,5 +1,0 @@
-@reference "./globals.css";
-
-.footer {
-  @apply text-xs text-gray-500;
-}
