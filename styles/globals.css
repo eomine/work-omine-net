@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  @apply text-base md:text-lg;
-}
-
 @theme {
   --font-sans: "Fira Sans", "sans-serif";
 }
