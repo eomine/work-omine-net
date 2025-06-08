@@ -1,6 +1,6 @@
-import Meta from '../components/Meta'
-import RecentWorks from '../components/home/RecentWorks'
-import { getAllPosts } from '../lib/api';
+import Meta from "../components/Meta";
+import RecentWorks from "../components/home/RecentWorks";
+import { getAllPosts } from "../lib/api";
 
 export default function Home({ recentWorks }) {
   return (
@@ -8,11 +8,11 @@ export default function Home({ recentWorks }) {
       <Meta />
       <RecentWorks data={recentWorks}></RecentWorks>
     </>
-  )
+  );
 }
 
 export async function getStaticProps() {
-  const recentWorks = getAllPosts('works');
+  const recentWorks = getAllPosts("works");
 
   return {
     props: {
