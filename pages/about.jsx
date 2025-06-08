@@ -1,14 +1,15 @@
 import Content from '../components/Content';
 import H1 from '../components/H1';
 import Link from '../components/Link';
-import Layout from "../components/Layout";
 import Main from "../components/Main";
+import Meta from "../components/Meta";
 import { getPostBySlug } from '../lib/api';
 import markdownToHtml from '../lib/markdownToHtml';
 
 export default function About({ title, content }) {
   return (
-    <Layout title={title}>
+    <>
+      <Meta title={title} />
       <Main>
         <Link href="/">
           &larr; Home
@@ -22,7 +23,7 @@ export default function About({ title, content }) {
           &larr; Home
         </Link>
       </Main>
-    </Layout>
+    </>
   );
 }
 

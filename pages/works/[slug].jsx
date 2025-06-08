@@ -1,16 +1,17 @@
 import Content from '../../components/Content';
 import { Gallery, GalleryImage } from '../../components/Gallery';
 import H1 from '../../components/H1';
-import Layout from '../../components/Layout';
 import Link from '../../components/Link';
 import Main from "../../components/Main";
+import Meta from "../../components/Meta";
 import Tag from '../../components/Tag';
 import { getPostBySlug, getPostsSlugs } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
 
 export default function Work({ images, tech, title, content }) {
   return (
-    <Layout title={title}>
+    <>
+      <Meta title={title} />
       <Main>
         <Link href="/">
           &larr; Home
@@ -39,7 +40,7 @@ export default function Work({ images, tech, title, content }) {
           &larr; Home
         </Link>
       </Main>
-    </Layout>
+    </>
   );
 }
 
