@@ -10,8 +10,10 @@
 html,
 body {
   @apply text-base md:text-lg;
+}
 
-  font-family: 'Fira Sans', sans-serif;
+@theme {
+  --font-sans: "Fira Sans", "sans-serif";
 }
 
 a {
